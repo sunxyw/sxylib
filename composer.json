@@ -1,0 +1,22 @@
+{
+    "name": "sunxyw/sxylib",
+    "description": "Common lib of sunxyw",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "sunxyw",
+            "email": "xy2496419818@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunxyw\\SXYLib\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}

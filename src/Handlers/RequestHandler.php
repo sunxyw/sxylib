@@ -43,4 +43,19 @@ class RequestHandler
 
         return (object)$data;
     }
+
+    public function file($key = null, $obj = false)
+    {
+        if (isset($key)) {
+            return $_FILES[$key];
+        }
+
+        if ($obj) {
+            $data = $this->dch->arr2obj($_FILES);
+        } else {
+            $data = $_FILES;
+        }
+
+        return (object)$data;
+    }
 }
